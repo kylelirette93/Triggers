@@ -28,7 +28,6 @@ public class Pickup : MonoBehaviour
         Debug.Log("Text is enabled.");
         if (other.gameObject.CompareTag("Player"))
         {
-            playerInTrigger = false;
             clickText.SetActive(false);
         }
     }
