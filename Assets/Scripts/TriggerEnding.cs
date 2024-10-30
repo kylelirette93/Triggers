@@ -11,8 +11,13 @@ public class TriggerEnding : MonoBehaviour
         endText.SetActive(false);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         endText.SetActive(true);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        endText.SetActive(false);
     }
 }
