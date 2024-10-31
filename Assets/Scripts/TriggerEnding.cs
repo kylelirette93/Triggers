@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerEnding : MonoBehaviour
 {
     public GameObject endText;
+    public ParticleSystem batParticles;
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class TriggerEnding : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         endText.SetActive(true);
+        batParticles.Play();
     }
 
     private void OnTriggerExit(Collider other)
